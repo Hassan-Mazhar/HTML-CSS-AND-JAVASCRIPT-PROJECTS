@@ -1,0 +1,39 @@
+.dashboard {
+    display: grid;
+    grid-template-areas:
+        "sidebar header"
+        "sidebar main"
+        "sidebar footer";
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 10px;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+.header {
+    grid-area: header;
+    background-color: #007BFF;
+    padding: 10px;
+    color: white;
+}
+
+.main-content {
+    grid-area: main;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,30 @@
+.hero {
+    height: 100vh;
+    background-image: url('dhttps: //www.mastercard.us/content/dam/public/mastercardcom/na/us/en/large-enterprises/images/corporate-purchasing-mastercard-card-1280x720.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
