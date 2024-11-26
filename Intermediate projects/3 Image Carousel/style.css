@@ -1,0 +1,27 @@
+#carousel-container {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 400px;
+    position: relative;
+}
+#carousel-image {
+    width: 100%;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+#prev-btn {
+    left: 10px;
+}
+#next-btn {
+    right: 10px;
+}

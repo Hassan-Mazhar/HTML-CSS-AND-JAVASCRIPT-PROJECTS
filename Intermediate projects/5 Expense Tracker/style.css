@@ -1,0 +1,13 @@
+#tracker-container {
+    text-align: center;
+    margin-top: 50px;
+}
+input, button {
+    margin: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+#expense-list {
+    list-style-type: none;
+    padding: 0;
+}
