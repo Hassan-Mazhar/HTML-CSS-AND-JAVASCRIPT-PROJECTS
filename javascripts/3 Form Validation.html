@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" />
+        <label for="password">password:</label>
+        <input type="password" id="password" />
+        <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+    <p id="message"></p>
+
+    <script>
+        function validateForm() {
+            let name = document.getElementById("name").value;
+            let password = document.getElementById("password").value;
+            if (name === "") {
+                document.getElementById("message").textContent = "Name is required!";
+            } 
+            if (password == ""){
+                document.getElementById("password").textContent="password is required!";
+            }
+            else {
+                document.getElementById("message").textContent = "Form Submitted!";
+            }
+        }
+    </script>
+</body>
+</html>

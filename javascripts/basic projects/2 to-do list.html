@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo List</title>
+</head>
+<body>
+    <h1>Todo List</h1>
+    <input type="text" id="taskInput" placeholder="Enter a task" />
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+
+    <script>
+        function addTask() {
+            const taskInput = document.getElementById("taskInput");
+            const taskList = document.getElementById("taskList");
+
+            if (taskInput.value === "") {
+                alert("Task cannot be empty!");
+                return;
+            }
+
+            const li = document.createElement("li");
+            li.textContent = taskInput.value;
+
+            li.addEventListener("click", function() {
+                li.style.textDecoration = li.style.textDecoration === "line-through" ? "none" : "line-through";
+            });
+
+            li.addEventListener("dblclick", function() {
+                taskList.removeChild(li);
+            });
+
+            taskList.appendChild(li);
+            taskInput.value = "";
+        }
+    </script>
+</body>
+</html>
